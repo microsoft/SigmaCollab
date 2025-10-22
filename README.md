@@ -1,12 +1,10 @@
 # SigmaCollab: A Dataset for Situated Collaboration
 
-__`SigmaCollab`__ is a dataset supporting research on human-AI physically situated collaboration, consisting of a set of 85 sessions in which untrained participants were guided by an mixed-reality assistive AI agent in performing procedural tasks in the physical world. 
+__`SigmaCollab`__ is a dataset that enables research on human-AI physically situated collaboration. The dataset consists of a set of 85 sessions in which untrained participants were guided by a mixed-reality assistive AI agent in performing procedural tasks in the physical world. 
 
-The dataset, described in detail in [this arxiv paper](to-fill-in), was collected with an open-source application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md), which is described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320). The [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
+![`SigmaCollab` data](InteractionSample.png)
 
-[Small video strip]
-
-The application-driven and interactive nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. 
+The dataset, described in detail in [this arxiv paper](to-fill-in), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
 
 ## Dataset contents
 

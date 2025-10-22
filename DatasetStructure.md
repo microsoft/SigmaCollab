@@ -333,3 +333,17 @@ def ticks_to_datetime(ticks):
 ```
 
 Note that python datetime objects have less temporal resolution than .NET ticks, the lowest unit being 1 microsecond in python, vs 100 nanoseconds in the .NET ticks. Hence the `// 10` in the code above.
+
+
+## Dataset Sections
+
+Three different Azure GPT model deployments were used in conjunction with the response-generating prompt throughout the data collection study. In the first part of the study we relied on a GPT-4o model using a global data zone region. After observing relatively large response latencies, we switched to a GPT-4o-mini deployment in a US data zone region. Finally, for the last third of the dataset, we switched back to a GPT-4o deployment using a US data zone region.
+
+Because of these changes, these three sections of the dataset (which we refer to as Section `A`, `B`, and `C`) have slightly different characteristics in terms of latency and GPT responses to user queries. The table below provides the details regarding which task execution sessions belong in each section. The information about which sessions belongs in which section is also available in the `task_execution_session_data` files.
+
+
+| Section | GPT model | From Session | To Session | Sessions Count |
+|---------|-----------|--------------|------------|----------------|
+| A | GPT-4o / Global Data Zone | 20250228-134800 | 20250307-102820 | 28 |
+| B | GPT-4o-mini / US Data Zone | 20250318-154110 | 20250324-105658 | 27 |
+| C | GPT-4o / US Data Zone | 20250325-110228 | 20250417-160112 | 30 |
