@@ -1,7 +1,7 @@
 # Dataset Structure
 
 
-The Sigma Bench dataset consists of 85 _task execution sessions_ (or in short _sessions_), each in its own folder. Each session corresponds to an attempt to execute a task by one of the participants (regardless of whether they were successful or not). Each session directory is named in the format __`{yyyymmdd}-{hhmmss}`__, capturing the date and time when the task execution session started, e.g. 20250228-134800. 
+The __`SigmaCollab`__ dataset consists of 85 _task execution sessions_ (or in short _sessions_), each in its own folder. Each session corresponds to an attempt to execute a task by one of the participants (regardless of whether they were successful or not). Each session directory is named in the format __`{yyyymmdd}-{hhmmss}`__, capturing the date and time when the task execution session started, e.g. 20250228-134800. 
 
 Each session directory has a set of subdirectories containing the various data streams for that session, as described in the table below. Clicking the blue links in the left column will send you to a description of the data format/representation in that particular directory.
 
@@ -18,6 +18,10 @@ Each session directory has a set of subdirectories containing the various data s
 | [camera_pose\rightfrontgrayscale](#camera_pose)                   | 3D pose for the right-front grayscale camera |
 | [eye_gaze](#eye_gaze)                      | Eye gaze tracking |
 | [eye_gaze_at_interface](#eye_gaze_at_interface)         | Data indicating whether the user is gazing at the task panel interface |
+| [eye_gaze_projection\color](#eye_gaze_projection)                         | Eye gaze projection in the color camera images |
+| [eye_gaze_projection\depth](#eye_gaze_projection)                         | Eye gaze projection in the depth camera images |
+| [eye_gaze_projection\leftfrontgrayscale](#eye_gaze_projection)                         | Eye gaze projection in the left-front grayscale camera images |
+| [eye_gaze_projection\rightfrontgrayscale](#eye_gaze_projection)                         | Eye gaze projection in the right-front grayscale camera images |
 | [hands](#hands)                         | Hand tracking data |
 | [head_pose](#head_pose)                     | Head pose data |
 | [image\color](#image)                         | Color camera images |
@@ -117,6 +121,24 @@ The `eye_gaze_at_interface` directory contains a file called __{`session_name`}.
   ...
 ]
 ```
+
+<a name="eye_gaze_projection"></a>
+### `eye_gaze_projection` directory
+
+The `eye_gaze_projection` directory contains one subdirectory for each camera (color, depth, left-front grayscale and right-front grayscale), and each of those contain a file called __{`session_name`}.eye_gaze_projection.{`camera_name`}.tsv__, where `session_name` is the name of the session and `camera_name` is the name of the camera. These files contain the projection of the gaze point on the different camera images in a tab-separated values format. 
+
+Each line contains the timestamp for the datapoint, expressed in [ticks](#timing), followed by x and y image coordinates of the projection point. For example:
+
+```text
+Originating Time        x         y
+---------------------------------------
+638763760882575800	525.16...	220.45...
+638763760882909139	524.59...	221.55...
+638763760893909342	524.47...	223.56...
+```
+
+The projection points are obtained by first intersecting the gaze with the depth map to determine the gaze point in 3D world coordinates, and then this point is projected into the image spaces by using the corresponding camera extrinsics and intrinsics. If the gaze point cannot be determined (e.g., there is a gap in the depth map in the direction of the gaze ray), the `x` and `y` values above are set to `NaN`.
+
 
 <a name="hands"></a>
 ### `hands` directory
