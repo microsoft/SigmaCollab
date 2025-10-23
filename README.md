@@ -24,6 +24,7 @@ __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participa
 
 Additionally, __`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](DatasetStructure.md) documentation page.
 
+<a name="download"></a>
 ## Download
 
 To download the dataset, start by cloning this repo: 
@@ -52,15 +53,7 @@ wget -i download/audio       # downloads the audio
 
 If you use this dataset in your research, please cite the following paper:
 ```
-@misc{SigmaCollab_arxiv,
-      title={SigmaCollab: A Dataset for Situated Collaboration}, 
-      author={Dan Bohus and Sean Andrist and Ann Paradiso and Nick Saw and Tim Schoonbeek and Maia Stiber},
-      year={2025},
-      eprint={<to-fill-in>},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/<to-fill-in>}, 
-}
+We are in the process of publishing this paper to arxiv, and will place the bibtex here when complete in the next couple of days. Please check again later.
 ```
 
 

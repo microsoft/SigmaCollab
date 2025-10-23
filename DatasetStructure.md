@@ -3,7 +3,9 @@
 
 The __`SigmaCollab`__ dataset consists of 85 _task execution sessions_ (or in short _sessions_), each in its own folder. Each session corresponds to an attempt to execute a task by one of the participants (regardless of whether they were successful or not). Each session directory is named in the format __`{yyyymmdd}-{hhmmss}`__, capturing the date and time when the task execution session started, e.g. 20250228-134800. 
 
-Each session directory has a set of subdirectories containing the various data streams for that session, as described in the table below. Clicking the blue links in the left column will send you to a description of the data format/representation in that particular directory.
+In addition, 8 _expert demonstration sessions_ are available, one for each type of task, performed by a user who was very familiar with the tasks. During these expert demonstration sessions the user performed each step correctly, at a regular pace, and without asking any questions. Like the main dataset, the expert demonstration sessions are also organized each in its own folder. Instructions on how to download the participant or reference sessions are described [here](README.md#download).
+
+Each session directory has a set of subdirectories containing the various data streams for that session, as described in the table below. Clicking the blue links in the left column will take you to a description of the data format/representation in that particular directory.
 
 | Directory                     | Description |
 |-------------------------------|-------------|
@@ -312,6 +314,20 @@ Finally two other attributes: `StepExecutionData` and `SubStepExecutionData` cap
 ### `user_interface_state` directory
 
 The `user_interface_state` directory contains a file called __{`session_name`}.user_interface_state.json__, where `session_name` is the name of the session. The file stores information about the positioning of the `Sigma` virtual user interface (dialog history bubbles and task panel) in a `.json` format. The file contains a list of datapoints, each containing a [timestamp](#timing) for the datapoint, and a hierarchical description of the 3D rectangles containing the dialog history bubbles and task panel user interface elements.
+
+<a name="sub_step_classification"></a>
+## Sub-step classification
+
+Additionally, a `sub_step_classes.tsv` file provides information about the classification of each sub-step into the taxonomy described in [the SigmaCollab paper](<fill-ref>). The first column contains the task name, the second the sub-step index, and the third the sub-step class, as illustrated below:
+
+```text
+Task name                  Index  Class
+-------------------------------------------------
+Make a Margarita mocktail   1.1   Add Amount
+Make a Margarita mocktail   1.2   Add Amount
+Make a Margarita mocktail   1.3   Invisible State
+...
+```
 
 
 <a name="timing"></a>
