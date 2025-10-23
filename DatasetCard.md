@@ -15,7 +15,7 @@ __`SigmaCollab`__ is a dataset that enables research on human-AI physically situ
 
 <!-- Provide a longer summary of what this dataset is. -->
 
-__`SigmaCollab`__, described in detail in [this arxiv paper](to-fill-in), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
+__`SigmaCollab`__, described in detail in [this arxiv paper](to-do), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
 
 __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participant and system audio, egocentric camera views from the head-mounted device, depth maps, head, hand and gaze tracking information, as well as additional annotations performed post-hoc. The raw set of data streams included is summarized in the table below:
 
@@ -32,7 +32,7 @@ __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participa
 Additionally, __`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](https://github.com/microsoft/SigmaCollab/blob/master/DatasetStructure.md) documentation page.
 
 
-- **Curated by:** [More Information Needed]
+- **Curated by:** Microsoft Research
 - **Language(s) (NLP):** English
 - **License:** [CDLA-Permissive-2.0](https://github.com/microsoft/SigmaCollab/blob/master/CDLA.md)
 
@@ -84,37 +84,29 @@ We recruited participants for the study from among the co-workers at our organiz
 ### Annotations
 <!-- If the dataset contains annotations which are not part of the initial data collection, use this section to describe them. -->
 
-__`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](https://github.com/microsoft/SigmaCollab/blob/master/DatasetStructure.md) documentation page.
+__`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](https://github.com/microsoft/SigmaCollab/blob/master/DatasetStructure.md) documentation page. For additional details regarding the annotations, see the [dataset paper](to-do).
 
-#### Annotation process
+<!--#### Annotation process-->
 
 <!-- This section describes the annotation process such as annotation tools used in the process, the amount of data annotated, annotation guidelines provided to the annotators, interannotator statistics, annotation validation, etc. -->
 
-[More Information Needed]
-
-#### Who are the annotators?
+<!--#### Who are the annotators?-->
 
 <!-- This section describes the people or systems who created the annotations. -->
 
-[More Information Needed]
-
-#### Personal and Sensitive Information
+<!--#### Personal and Sensitive Information-->
 
 <!-- State whether the dataset contains data that might be considered personal, sensitive, or private (e.g., data that reveals addresses, uniquely identifiable names or aliases, racial or ethnic origins, sexual orientations, religious beliefs, political opinions, financial or health data, etc.). If efforts were made to anonymize the data, describe the anonymization process. -->
 
-[More Information Needed]
-
-## Bias, Risks, and Limitations
+<!--## Bias, Risks, and Limitations-->
 
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
-[More Information Needed]
-
-### Recommendations
+<!-- ### Recommendations-->
 
 <!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
 
-Users should be made aware of the risks, biases and limitations of the dataset. More information needed for further recommendations.
+<!--Users should be made aware of the risks, biases and limitations of the dataset. More information needed for further recommendations.-->
 
 ## Citation
 
@@ -122,7 +114,9 @@ Users should be made aware of the risks, biases and limitations of the dataset. 
 
 **BibTeX:**
 
-[More Information Needed]
+```
+We are in the process of publishing a paper describing the dataset to arxiv, and will place the bibtex here when complete in the next couple of days. Please check again later.
+```
 
 ## Dataset Card Contact
 
