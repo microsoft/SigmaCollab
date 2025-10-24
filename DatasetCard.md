@@ -7,7 +7,7 @@ pretty_name: SigmaCollab
 # HuggingFace Dataset Card for SigmaCollab
 
 <!-- Provide a quick summary of the dataset. -->
-__`SigmaCollab`__ is a dataset that enables research on human-AI physically situated collaboration. The dataset consists of a set of 85 sessions in which untrained participants were guided by a mixed-reality assistive AI agent in performing procedural tasks in the physical world. 
+__`SigmaCollab`__ is a dataset that enables research on human-AI physically situated collaboration. The dataset consists of a set of 85 sessions in which untrained participants were guided by a mixed-reality assistive AI agent in performing procedural tasks in the physical world. In addition 8 sessions are available in which an expert performed the same tasks.
 
 ## Dataset Details
 
@@ -44,7 +44,7 @@ Additionally, __`SigmaCollab`__ includes manual segmentation and transcripts for
 ## Uses
 
 <!-- Address questions around how the dataset is intended to be used. -->
-__`SigmaCollab`__ aims to catalyze rigorous, application-grounded study of fluid human–AI collaboration and to close the gap between lab benchmarks and real-world performance.
+__`SigmaCollab`__ aims to catalyze rigorous, application-grounded study of fluid human–AI collaboration and to close the gap between lab benchmarks and real-world performance. The dataset can serve as a testbed for evaluating the generalizability and effectiveness of various models in the context of an interactive application, which is potentially out-of-distribution from what the models have been trained on.
 
 ## Dataset Structure
 
@@ -98,9 +98,11 @@ __`SigmaCollab`__ includes manual segmentation and transcripts for the user utte
 
 <!-- State whether the dataset contains data that might be considered personal, sensitive, or private (e.g., data that reveals addresses, uniquely identifiable names or aliases, racial or ethnic origins, sexual orientations, religious beliefs, political opinions, financial or health data, etc.). If efforts were made to anonymize the data, describe the anonymization process. -->
 
-<!--## Bias, Risks, and Limitations-->
+## Bias, Risks, and Limitations
 
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
+
+__`SigmaCollab`__ has certain biases: the data was collected in a laboratory setting and may not reflect the full complexities arising in a real-world deployment. While there is a certain amount of variety in the procedural tasks involved, the tasks do not reflect the whole range of issues that may arise during procedural task guidance. The participants in the data collection experiment were selected from among employees at Microsoft Research. For more details about the data collection process, please see the [dataset paper](to-do).
 
 <!-- ### Recommendations-->
 

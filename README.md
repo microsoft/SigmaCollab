@@ -1,6 +1,6 @@
 # SigmaCollab: A Dataset for Situated Collaboration
 
-__`SigmaCollab`__ is a dataset that enables research on human-AI physically situated collaboration. The dataset consists of a set of 85 sessions in which untrained participants were guided by a mixed-reality assistive AI agent in performing procedural tasks in the physical world. 
+__`SigmaCollab`__ is a dataset that enables research on human-AI physically situated collaboration. The dataset consists of a set of 85 sessions in which untrained participants were guided by a mixed-reality assistive AI agent in performing procedural tasks in the physical world, plus an additional 8 sessions in which the system guided an expert in performing the same tasks.
 
 ![`SigmaCollab` data](InteractionSample.png)
 
@@ -22,7 +22,7 @@ __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participa
 
 <br>
 
-Additionally, __`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](DatasetStructure.md) documentation page.
+__`SigmaCollab`__ also includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](DatasetStructure.md) documentation page.
 
 <a name="download"></a>
 ## Download

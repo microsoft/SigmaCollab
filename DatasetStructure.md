@@ -1,9 +1,9 @@
 # Dataset Structure
 
 
-The __`SigmaCollab`__ dataset consists of 85 _task execution sessions_ (or in short _sessions_), each in its own folder. Each session corresponds to an attempt to execute a task by one of the participants (regardless of whether they were successful or not). Each session directory is named in the format __`{yyyymmdd}-{hhmmss}`__, capturing the date and time when the task execution session started, e.g. 20250228-134800. 
+The __`SigmaCollab`__ dataset consists of 85 _task execution sessions_ (or in short _sessions_), each in its own folder under a top level `participant_sessions` folder. Each session corresponds to an attempt to execute a task by one of the participants (regardless of whether they were successful or not). Each session directory is named in the format __`{yyyymmdd}-{hhmmss}`__, capturing the date and time when the task execution session started, e.g. 20250228-134800. 
 
-In addition, 8 _expert demonstration sessions_ are available, one for each type of task, performed by a user who was very familiar with the tasks. During these expert demonstration sessions the user performed each step correctly, at a regular pace, and without asking any questions. Like the main dataset, the expert demonstration sessions are also organized each in its own folder. Instructions on how to download the participant or reference sessions are described [here](README.md#download).
+In addition, 8 _expert demonstration sessions_ are available, one for each type of task, performed by a user who was very familiar with the tasks. During these expert demonstration sessions the user performed each step correctly, at a regular pace, and without asking any questions. Like the main dataset, the expert demonstration sessions are also organized each in its own folder, under a top-level `expert_sessions` folder. Instructions on how to download the participant or reference sessions are described [here](README.md#download).
 
 Each session directory has a set of subdirectories containing the various data streams for that session, as described in the table below. Clicking the blue links in the left column will take you to a description of the data format/representation in that particular directory.
 
