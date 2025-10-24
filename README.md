@@ -37,15 +37,24 @@ cd SigmaCollab
 And then use the following `wget` command to download the entire dataset (~100GB):
 
 ```bash
-wget -i download/all 
+wget -i download/all_sessions
 ```
 
 You can also download only portions of the dataset, corresponding to each of the modalities / directories described in [Dataset Structure](DatasetStructure.md), e.g.:
 
 ```bash
-wget -i download/image.color # downloads only the color images
-wget -i download/image       # downloads all images (depth, color, leftfrontgrayscale, rightfrontgrayscale)
-wget -i download/audio       # downloads the audio
+wget -i download/all_sessions.image             # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for all sessions
+wget -i download/participant_sessions.image          # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) only for the participant sessions
+wget -i download/all_sessions.image.color       # downloads the color images for all sessions
+wget -i download/expert_sessions.audio     # downloads the audio for the 8 expert demonstration sessions
+```
+
+In the commands above, you can use the `all_sessions`, `participant_sessions`, and `expert_sessions` monikers to specify which sessions to download, followed by the modaly names as described in [Dataset Structure](DatasetStructure.md).
+The commands will download a set of corresponding .tag.gz files, which you can decompress into a data subdirectory as follows:
+
+```bash
+mkdir data
+for f in *.tar.gz; do tar -xzf "$f" -C data; done
 ```
 
 

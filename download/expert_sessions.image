@@ -1,0 +1,4 @@
+https://huggingface.co/datasets/microsoft/sigmacollab/blob/main/data/expert_sessions.image.color.tar.gz
+https://huggingface.co/datasets/microsoft/sigmacollab/blob/main/data/expert_sessions.image.depth.tar.gz
+https://huggingface.co/datasets/microsoft/sigmacollab/blob/main/data/expert_sessions.image.leftfrontgrayscale.tar.gz
+https://huggingface.co/datasets/microsoft/sigmacollab/blob/main/data/expert_sessions.image.rightfrontgrayscale.tar.gz
