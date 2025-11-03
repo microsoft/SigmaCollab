@@ -13,9 +13,9 @@ __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participa
 | Stream                          | Representation                                                                                                    | Avg. Frame Rate |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------|:---------------------:|
 | RGB Camera View                  | 896 × 504 pixels @ 24bpp, with camera pose and intrinsics                                                         | 14.91 Hz              |
-| Depth Camera View                | 320 × 288 pixels @ 16bpp, with camera pose and intrinsics                                                        | 4.99 Hz               |
+| Depth Camera View                | 320 × 288 pixels @ 16bpp, with camera pose and intrinsics                                                        | 4.98 Hz               |
 | Left Front Grayscale Camera View | 640 × 480 pixels @ 8bpp, with camera pose and intrinsics                                                         | 13.64 Hz              |
-| Right Front Grayscale Camera View| 640 × 480 pixels @ 8bpp, with camera pose and intrinsics                                                         | 13.65 Hz              |
+| Right Front Grayscale Camera View| 640 × 480 pixels @ 8bpp, with camera pose and intrinsics                                                         | 13.64 Hz              |
 | Head Pose + Eye Gaze             | tuple of head pose matrix (4 × 4) and eye gaze ray (3 × 1 origin position vector and 3 × 1 direction vector)     | 28.37 Hz              |
 | Hands Pose                       | pose matrices (4 × 4) for each of the 26 joints in the left and right hand                                       | 20.01 Hz              |
 | Audio                            | 1-channel, 32-bit floating-point PCM                                                                             | 16.00 kHz             |
