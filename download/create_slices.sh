@@ -1,5 +1,3 @@
-#!/bin/bash
-
 grep participant_sessions all_sessions > participant_sessions
 grep participant_sessions.audio all_sessions > participant_sessions.audio
 grep participant_sessions.camera_intrinsics all_sessions > participant_sessions.camera_intrinsics
