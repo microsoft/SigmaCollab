@@ -49,8 +49,8 @@ wget -i download/all_sessions.image.color       # downloads the color images for
 wget -i download/expert_sessions.audio     # downloads the audio for the 8 expert demonstration sessions
 ```
 
-In the commands above, you can use the `all_sessions`, `participant_sessions`, and `expert_sessions` monikers to specify which sessions to download, followed by the modaly names as described in [Dataset Structure](DatasetStructure.md).
-The commands will download a set of corresponding .tag.gz files, which you can decompress into a data subdirectory as follows:
+In the commands above, you can use the `all_sessions`, `participant_sessions`, and `expert_sessions` aliases to specify which sessions to download, followed by the modality names as described in [Dataset Structure](DatasetStructure.md).
+The commands will download a set of corresponding .tar.gz files, which you can decompress into a data subdirectory as follows:
 
 ```bash
 mkdir data
@@ -69,7 +69,7 @@ We are in the process of publishing this paper to arxiv, and will place the bibt
 ## License
 
 The data for the SigmaCollab dataset is made available under the [CDLA-Permissive-2.0](CDLA.txt) license.
-The files in this github site are made available under the [MIT License](LICENSE).
+The files in this GitHub site are made available under the [MIT License](LICENSE).
 
 ## Contributing
 
