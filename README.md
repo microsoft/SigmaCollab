@@ -34,7 +34,7 @@ git clone https://github.com/microsoft/SigmaCollab
 cd SigmaCollab
 ```
 
-And then use the following `wget` command to download the entire dataset (~100GB):
+And then use the following `wget` command to download the entire dataset (~112GB):
 
 ```bash
 wget -i download/all_sessions
