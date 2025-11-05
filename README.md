@@ -27,7 +27,7 @@ __`SigmaCollab`__ also includes manual segmentation and transcripts for the user
 <a name="download"></a>
 ## Download
 
-To download the dataset, start by cloning this repo: 
+The data is hosted on [HuggingFace](https://huggingface.co/datasets/microsoft/sigmacollab) and available under a [CDLA-Permissive-2.0](CDLA.txt) license. You can download the dataset by first cloning this repo: 
 
 ```bash
 git clone https://github.com/microsoft/SigmaCollab
@@ -60,7 +60,7 @@ for f in *.tar.gz; do tar -xzf "$f" -C data; done
 
 ## Citation
 
-If you use this dataset in your research, please cite the following paper:
+If you use this dataset in your research, please consider giving a star to the repo and please cite the following [paper](https://arxiv.org/abs/2511.02560):
 ```
 @misc{bohus2025sigmacollabapplicationdrivendatasetphysically,
       title={SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration}, 
