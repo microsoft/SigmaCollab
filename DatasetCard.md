@@ -15,7 +15,7 @@ __`SigmaCollab`__ is a dataset that enables research on human-AI physically situ
 
 <!-- Provide a longer summary of what this dataset is. -->
 
-__`SigmaCollab`__, described in detail in [this arxiv paper](to-do), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
+__`SigmaCollab`__, described in detail in [this arxiv paper](https://arxiv.org/abs/2511.02560), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
 
 __`SigmaCollab`__ includes a set of rich, multimodal data streams: the participant and system audio, egocentric camera views from the head-mounted device, depth maps, head, hand and gaze tracking information, as well as additional annotations performed post-hoc. The raw set of data streams included is summarized in the table below:
 
@@ -39,7 +39,7 @@ Additionally, __`SigmaCollab`__ includes manual segmentation and transcripts for
 ### Dataset Sources
 
 - **Repository:** [https://github.com/microsoft/SigmaCollab](https://github.com/microsoft/SigmaCollab)
-- **Paper:** [SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration]()
+- **Paper:** [SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration](https://arxiv.org/abs/2511.02560)
 
 ## Uses
 
@@ -84,7 +84,7 @@ We recruited participants for the study from among the co-workers at our organiz
 ### Annotations
 <!-- If the dataset contains annotations which are not part of the initial data collection, use this section to describe them. -->
 
-__`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](https://github.com/microsoft/SigmaCollab/blob/master/DatasetStructure.md) documentation page. For additional details regarding the annotations, see the [dataset paper](to-do).
+__`SigmaCollab`__ includes manual segmentation and transcripts for the user utterances, word-level timings for both user and system utterances, task success annotations, as well as post-processed gaze information (e.g., projection of gaze point in the various camera images). For more details regarding the dataset contents, structure, and data formats, please see the [Dataset Structure](https://github.com/microsoft/SigmaCollab/blob/master/DatasetStructure.md) documentation page. For additional details regarding the annotations, see the [dataset paper](https://arxiv.org/abs/2511.02560).
 
 <!--#### Annotation process-->
 
@@ -102,7 +102,7 @@ __`SigmaCollab`__ includes manual segmentation and transcripts for the user utte
 
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
-__`SigmaCollab`__ has certain biases: the data was collected in a laboratory setting and may not reflect the full complexities arising in a real-world deployment. While there is a certain amount of variety in the procedural tasks involved, the tasks do not reflect the whole range of issues that may arise during procedural task guidance. The participants in the data collection experiment were selected from among employees at Microsoft Research. For more details about the data collection process, please see the [dataset paper](to-do).
+__`SigmaCollab`__ has certain biases: the data was collected in a laboratory setting and may not reflect the full complexities arising in a real-world deployment. While there is a certain amount of variety in the procedural tasks involved, the tasks do not reflect the whole range of issues that may arise during procedural task guidance. The participants in the data collection experiment were selected from among employees at Microsoft Research. For more details about the data collection process, please see the [dataset paper](https://arxiv.org/abs/2511.02560).
 
 <!-- ### Recommendations-->
 
@@ -117,7 +117,15 @@ __`SigmaCollab`__ has certain biases: the data was collected in a laboratory set
 **BibTeX:**
 
 ```
-We are in the process of publishing a paper describing the dataset to arxiv, and will place the bibtex here when complete in the next couple of days. Please check again later.
+@misc{bohus2025sigmacollabapplicationdrivendatasetphysically,
+      title={SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration}, 
+      author={Dan Bohus and Sean Andrist and Ann Paradiso and Nick Saw and Tim Schoonbeek and Maia Stiber},
+      year={2025},
+      eprint={2511.02560},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2511.02560}, 
+}
 ```
 
 ## Dataset Card Contact

@@ -4,7 +4,7 @@ __`SigmaCollab`__ is a dataset that enables research on human-AI physically situ
 
 ![`SigmaCollab` data](InteractionSample.png)
 
-The dataset, described in detail in [this arxiv paper](to-fill-in), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
+The dataset, described in detail in [this arxiv paper](https://arxiv.org/abs/2511.02560), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
 
 ## Dataset contents
 
@@ -27,14 +27,14 @@ __`SigmaCollab`__ also includes manual segmentation and transcripts for the user
 <a name="download"></a>
 ## Download
 
-To download the dataset, start by cloning this repo: 
+The data is hosted on [HuggingFace](https://huggingface.co/datasets/microsoft/sigmacollab) and available under a [CDLA-Permissive-2.0](CDLA.txt) license. You can download the dataset by first cloning this repo: 
 
 ```bash
 git clone https://github.com/microsoft/SigmaCollab
 cd SigmaCollab
 ```
 
-And then use the following `wget` command to download the entire dataset (~100GB):
+And then use the following `wget` command to download the entire dataset (~112GB):
 
 ```bash
 wget -i download/all_sessions
@@ -43,10 +43,10 @@ wget -i download/all_sessions
 You can also download only portions of the dataset, corresponding to each of the modalities / directories described in [Dataset Structure](DatasetStructure.md), e.g.:
 
 ```bash
-wget -i download/all_sessions.image             # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for all sessions
-wget -i download/participant_sessions.image          # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) only for the participant sessions
-wget -i download/all_sessions.image.color       # downloads the color images for all sessions
-wget -i download/expert_sessions.audio     # downloads the audio for the 8 expert demonstration sessions
+wget -i download/all_sessions.image           # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for all sessions
+wget -i download/participant_sessions.image   # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for the participant sessions
+wget -i download/all_sessions.image.color     # downloads the color images for all sessions
+wget -i download/expert_sessions.audio        # downloads the audio for the 8 expert demonstration sessions
 ```
 
 In the commands above, you can use the `all_sessions`, `participant_sessions`, and `expert_sessions` aliases to specify which sessions to download, followed by the modality names as described in [Dataset Structure](DatasetStructure.md).
@@ -60,9 +60,17 @@ for f in *.tar.gz; do tar -xzf "$f" -C data; done
 
 ## Citation
 
-If you use this dataset in your research, please cite the following paper:
+If you use this dataset in your research, please consider giving a star to the repo and please cite the following [paper](https://arxiv.org/abs/2511.02560):
 ```
-We are in the process of publishing this paper to arxiv, and will place the bibtex here when complete in the next couple of days. Please check again later.
+@misc{bohus2025sigmacollabapplicationdrivendatasetphysically,
+      title={SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration}, 
+      author={Dan Bohus and Sean Andrist and Ann Paradiso and Nick Saw and Tim Schoonbeek and Maia Stiber},
+      year={2025},
+      eprint={2511.02560},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2511.02560}, 
+}
 ```
 
 
