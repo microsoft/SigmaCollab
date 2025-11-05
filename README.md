@@ -4,7 +4,7 @@ __`SigmaCollab`__ is a dataset that enables research on human-AI physically situ
 
 ![`SigmaCollab` data](InteractionSample.png)
 
-The dataset, described in detail in [this arxiv paper](to-fill-in), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
+The dataset, described in detail in [this arxiv paper](https://arxiv.org/abs/2511.02560), was collected with an open-source mixed-reality AI application called [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) (itself described in [this arxiv paper](https://arxiv.org/abs/2405.13035) and in an [IEEE VR extended abstract](https://ieeexplore.ieee.org/abstract/document/10536320)). The _application-driven_ and _interactive_ nature of the __`SigmaCollab`__ dataset bring to the fore novel research challenges for human-AI collaboration, and provide more realistic testing grounds for various AI models operating in this space. Additionally, the [Sigma](https://github.com/microsoft/psi/blob/master/Applications/Sigma/Readme.md) system is open-source, and you can download and run it yourself to collect your own / additional data.
 
 ## Dataset contents
 
@@ -62,7 +62,15 @@ for f in *.tar.gz; do tar -xzf "$f" -C data; done
 
 If you use this dataset in your research, please cite the following paper:
 ```
-We are in the process of publishing this paper to arxiv, and will place the bibtex here when complete in the next couple of days. Please check again later.
+@misc{bohus2025sigmacollabapplicationdrivendatasetphysically,
+      title={SigmaCollab: An Application-Driven Dataset for Physically Situated Collaboration}, 
+      author={Dan Bohus and Sean Andrist and Ann Paradiso and Nick Saw and Tim Schoonbeek and Maia Stiber},
+      year={2025},
+      eprint={2511.02560},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2511.02560}, 
+}
 ```
 
 
