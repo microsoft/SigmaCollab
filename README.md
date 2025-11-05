@@ -43,10 +43,10 @@ wget -i download/all_sessions
 You can also download only portions of the dataset, corresponding to each of the modalities / directories described in [Dataset Structure](DatasetStructure.md), e.g.:
 
 ```bash
-wget -i download/all_sessions.image             # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for all sessions
-wget -i download/participant_sessions.image          # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) only for the participant sessions
-wget -i download/all_sessions.image.color       # downloads the color images for all sessions
-wget -i download/expert_sessions.audio     # downloads the audio for the 8 expert demonstration sessions
+wget -i download/all_sessions.image           # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for all sessions
+wget -i download/participant_sessions.image   # downloads images (depth, color, leftfrontgrayscale, rightfrontgrayscale) for the participant sessions
+wget -i download/all_sessions.image.color     # downloads the color images for all sessions
+wget -i download/expert_sessions.audio        # downloads the audio for the 8 expert demonstration sessions
 ```
 
 In the commands above, you can use the `all_sessions`, `participant_sessions`, and `expert_sessions` aliases to specify which sessions to download, followed by the modality names as described in [Dataset Structure](DatasetStructure.md).
